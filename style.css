@@ -14,6 +14,40 @@ h1 {
     font-size: 30pt;
 }
 
+div {
+    padding-bottom: 60px;
+}
+
+button {
+    background-color: #0A0A0A;
+    border-color: #fafafa;
+    color: #fafafa;
+    font-size: 13pt;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+}
+
+button a {
+    color: #fafafa;
+    text-decoration: none;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #fafafa;
+    color: #0A0A0A;
+}
+
+button a:hover {
+    color: #0A0A0A;
+}
+
+#text_link {
+    color: #fafafa;
+    font-weight: bold;
+}
+
 footer {
     background-color: #141414;
     text-align: center;
