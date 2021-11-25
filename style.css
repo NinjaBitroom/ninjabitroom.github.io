@@ -21,25 +21,17 @@ div {
 button {
     background-color: #0A0A0A;
     border-color: #fafafa;
+    border-style: solid;
+    border-width: 3px;
     color: #fafafa;
     font-size: 13pt;
     font-weight: bold;
     text-decoration: none;
-    padding: 0;
-}
-
-button a {
-    color: #fafafa;
-    text-decoration: none;
-    margin: 10px;
+    padding: 5px;
 }
 
 button:hover {
     background-color: #fafafa;
-    color: #0A0A0A;
-}
-
-button a:hover {
     color: #0A0A0A;
 }
 
