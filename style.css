@@ -3,7 +3,7 @@
 
 body {
     background-color: #0A0A0A;
-    margin: 0%;
+    margin: 0 20px;
     font-family: Montserrat, sans-serif;
     color: #fafafa;
 }
@@ -16,6 +16,16 @@ h1 {
 
 div {
     padding-bottom: 60px;
+}
+
+.sessao {
+    margin: 0;
+    padding: 25px 0;
+}
+
+.projeto {
+    margin: 0;
+    padding: 15px 0;
 }
 
 button {
