@@ -1,71 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="auto">
 
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>NinjaBitroom</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-	<div id="container">
-		<h1>Olá, eu sou NinjaBitroom!</h1>
-
-		<div class="sessao">
-			<p><b>Meu nome é Gabriel, gosto muito de jogos, de animes e de tecnologia!</b></p>
-			<p>NinjaBitroom é apenas um apelido que escolhi para usar na internet, o nome em si não tem grandes
-				significados, eu sempre fui um pouco perdido sobre o meu futuro, sem ter certeza sobre o que eu queria "ser
-				quando crescer", mas uma coisa era certa, desde a infância eu gostava de computadores, desde pequeno aqui em
-				casa tinha um computador, mas esse computador era bem fraco, quase não rodava o Windows direito, os vídeos
-				do Youtube não podiam passar de 144p que já travava o PC todo, mesmo assim eu dava um jeito de me divertir
-				com ele, até que um dia os colegas da minha turma foi levado para conhecer o IFRO, onde eu poderia fazer um
-				curso de informática integrado ao ensino médio e foi esse caminho que escolhi seguir. Atualmente eu gosto de
-				programar, praticamente a única linguagem que sei usar é Python, mas eu também tenho um pouco de
-				conhecimento em outras linguagens como JavaScript e Pascal.</p>
-		</div>
-
-		<div class="sessao">
-			<h2>Projetos</h2>
-			<p>Talvez você queira dar uma olhada nos meus projetos!</p>
-			<div class="projeto">
-				<h3>Bloco de Notas com Python</h3>
-				<p>Esse talvez seja o projeto mais avançado que eu já fiz, a intenção era apenas criar um editor de texto estilo
-					o Bloco de Notas do próprio Windows, mas fazer isso se tornou mais complexo do que eu imaginava, tive que
-					adquirir bastante conhecimento sobre criação de aplicativos de interface gráfica com Tkinter, manipulação de
-					arquivos e orientação à objetos.</p>
-				<a href="https://github.com/NinjaBitroom/bloco-de-notas" target="_blank"><button>Código Fonte</button></a>
+	<header class="navbar navbar-expand-lg bg-primary">
+		<nav class="container">
+			<a class="navbar-brand link-light" href="{{ url_for('root.index') }}">ninjabitroom.github.io</a>
+		</nav>
+	</header>
+	<main class="container">
+		<h1 class="text-center  my-4">Olá, eu sou NinjaBitroom!</h1>
+		<div class="card mb-4">
+			<div class="card-body">
+				<h5 class="card-title">Meu nome é Gabriel, gosto muito de jogos, de animes e de tecnologia!</h5>
+				<p class="card-text">NinjaBitroom é apenas um apelido que escolhi para usar na internet, o nome em si
+					não tem grandes significados, eu sempre fui um pouco perdido sobre o meu futuro, sem ter certeza
+					sobre o que eu queria "ser quando crescer", mas uma coisa era certa, desde a infância eu gostava de
+					computadores, desde pequeno aqui em casa tinha um computador, mas esse computador era bem fraco,
+					quase não rodava o Windows direito, os vídeos do Youtube não podiam passar de 144p que já travava o
+					PC todo, mesmo assim eu dava um jeito de me divertir com ele, até que um dia os colegas da minha
+					turma foi levado para conhecer o IFRO, onde eu poderia fazer um curso de informática integrado ao
+					ensino médio e foi esse caminho que escolhi seguir. Atualmente eu gosto de programar, praticamente a
+					única linguagem que sei usar é Python, mas eu também tenho um pouco de conhecimento em outras
+					linguagens como JavaScript e Pascal.</p>
 			</div>
-
-			<div class="projeto">
-				<h3>ifroariquemes/42</h3>
-				<p>Este <b>não é meu projeto</b>, o projeto 42 foi um trabalho em grupo feito entre várias turmas da
-					área de informática, o objetivo era fazer um site com várias postagens sobre informática envolvendo
-					automação e manutenção, para auxiliar a construção do site foi utilizado o Jekyll, uma ferramenta que ajuda
-					muito no desenvolvimento de sites estáticos. <a id="text_link" target="_blank"
+		</div>
+		<h2>Projetos</h2>
+		<p>Talvez você queira dar uma olhada nos meus projetos!</p>
+		<div class="card mb-4">
+			<div class="card-body">
+				<h5 class="card-title">Bloco de Notas com Python</h5>
+				<p class="card-text">Esse talvez seja o projeto mais avançado que eu já fiz, a intenção era apenas criar
+					um editor de texto estilo o Bloco de Notas do próprio Windows, mas fazer isso se tornou mais
+					complexo do que eu imaginava, tive que adquirir bastante conhecimento sobre criação de aplicativos
+					de interface gráfica com Tkinter, manipulação de arquivos e orientação à objetos.</p>
+				<a href="https://github.com/NinjaBitroom/bloco-de-notas" class="btn btn-primary">Código Fonte</a>
+			</div>
+		</div>
+		<div class="card mb-4">
+			<div class="card-body">
+				<h5 class="card-title">ifroariquemes/42</h5>
+				<p class="card-text">Este <b>não é meu projeto</b>, o projeto 42 foi um trabalho em grupo feito entre
+					várias turmas da área de informática, o objetivo era fazer um site com várias postagens sobre
+					informática envolvendo automação e manutenção, para auxiliar a construção do site foi utilizado o
+					Jekyll, uma ferramenta que ajuda muito no desenvolvimento de sites estáticos. <a id="text_link"
 						href="https://ifroariquemes.github.io/42/post/compartilhamento-de-arquivos-entre-computadores-numa-rede-windows.html">Veja
 						o meu post sobre "Como compartilhar arquivos em uma rede Windows".</a></p>
-				<a href="https://github.com/ifroariquemes/42" target="_blank"><button>Código Fonte</button></a>
-			</div>
-
-			<div class="projeto">
-				<h3>progI2022-final</h3>
-				<p>Este é um trabalho feito no final da disciplina de Programação I do curso de Análise e Desenvolvimento de Sistemas do IFRO,
-					o objetivo era fazer um site portfólio contendo as atividades feitas durante a disciplina, para isso foi utilizado
-					HTML, CSS e JavaScript. <a id="text_link" target="_blank" 
-					href="https://ninjabitroom.github.io/progI2022-final/">Veja o meu site.</a></p>
-				<a href="https://github.com/NinjaBitroom/progI2022-final" target="_blank"><button>Código Fonte</button></a>
-					
+				<a href="https://github.com/ifroariquemes/42" class="btn btn-primary">Código Fonte</a>
 			</div>
 		</div>
-
-	</div>
-	<footer>
-		<p>© 2021 Gabriel Bitencourt Marin. Todos os direitos reservados.</p>
+	</main>
+	<footer class="container">
+		<p class="display-6 text-center">Desenvolvido por Gabriel Bitencourt Marin</p>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
